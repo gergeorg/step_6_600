@@ -24,3 +24,11 @@ a {
   color: #090909;
   text-decoration: none;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
