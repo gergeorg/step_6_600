@@ -8,6 +8,10 @@
 /* Blocks */
 
 @import "blocks/header.css";
+@import "blocks/form.css";
+@import "blocks/checkbox.css";
+@import "blocks/radio.css";
+@import "blocks/input.css";
 @import "blocks/catalog-list.css";
 @import "blocks/catalog-card.css";
 @import "blocks/parameter-card.css";

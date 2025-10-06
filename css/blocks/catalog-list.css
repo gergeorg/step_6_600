@@ -1,9 +1,16 @@
+.catalog__inner {
+	display: flex;
+	gap: 58px;
+	margin-bottom: 51px;
+}
+
 .catalog-list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 16px;
 	width: 100%;
-	margin: 20px 0 0;
+	margin: 40px 0 0;
 	padding: 0;
 	list-style: none;
 }
+

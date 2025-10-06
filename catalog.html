@@ -21,14 +21,14 @@
 				<div class="header__view">
 					<button class="header__view-button header__view-button--active" type="button" aria-label="сменить вид отображения на 'Визуальный выбор'">
 						<svg class="header__view-icon" width="32" height="32" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#icon-building"></use>
+							<use xlink:href="images/sprite.svg#icon-building"></use>
 						</svg>
 						Визуальный выбор
 					</button>
 
 					<button class="header__view-button header__view-button--rigrt" type="button" aria-label="сменить вид отображения на 'По параметрам'">
 						<svg class="header__view-icon" width="32" height="32" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#icon-filter"></use>
+							<use xlink:href="images/sprite.svg#icon-filter"></use>
 						</svg>
 						По параметрам
 					</button>
@@ -38,7 +38,7 @@
 					<a href="#" class="header__lang">en</a>
 					<a href="#" class="header__favorite">
 						<svg class="header__favorite-icon" width="22" height="20" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#icon-favorite"></use>
+							<use xlink:href="images/sprite.svg#icon-favorite"></use>
 						</svg>
 						<span class="header__favorite-num">1</span>
 					</a>
@@ -54,6 +54,291 @@
 					<div class="catalog__inner">
 						<!-- Форма фильтрации -->
 
+						<form class="catalog__form form" action="#">
+							<div class="form__header">
+								<span class="form__header-text">Показано 6 из 9</span>
+
+								<button class="form__closed" type="button">
+									СБРОСИТЬ
+									<svg class="form__closed-icon" width="24" height="24" aria-hidden="true">
+										<use xlink:href="images/sprite.svg#icon-closed"></use>
+									</svg>
+								</button>
+							</div>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Валюта</legend>
+
+								<div class="form__wrapper-three-elem">
+									<label class="radio">
+										<input class="radio__input" type="radio" name="currency" value="rub" checked required />
+										&#8381;
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="currency" value="dollar" />
+										&#36;
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="currency" value="euro" />
+										&#8364;
+									</label>
+								</div>
+							</fieldset>
+
+							<label class="form__booked checkbox">
+								<input class="checkbox__input" type="checkbox" name="hide_booked" />
+								<span class="checkbox__checkmark"></span>
+								<span class="checkbox__text">Скрыть забронированные</span>
+							</label>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Номер квартиры</legend>
+
+								<label class="form__apart custom-input">
+									<input class="custom-input__input" type="text" name="apart_number" placeholder="Введите номер" />
+									<svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+										<use xlink:href="images/sprite.svg#icon-key"></use>
+									</svg>
+								</label>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Количество спален</legend>
+
+								<div class="form__wrapper-five-elem">
+									<label class="radio">
+										<input class="radio__input" type="radio" name="bedroom_count" value="1" checked required />
+										1
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="bedroom_count" value="2" />
+										2
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="bedroom_count" value="3" />
+										3
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="bedroom_count" value="4" />
+										4
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="bedroom_count" value="5" />
+										5
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Тип</legend>
+
+								<div class="form__wrapper-type">
+									<label class="radio">
+										<input class="radio__input" type="radio" name="type" value="apartment" checked required />
+										Квартира
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="type" value="penthouse" />
+										Пентхаус
+									</label>
+
+									<label class="radio form__radio-full">
+										<input class="radio__input" type="radio" name="type" value="villa" />
+										Вилла
+									</label>
+								</div>
+
+								<button class="form__tooltip form__tooltip--active">Показать 4 квартиры</button>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Размер</legend>
+
+								<div class="form__wrapper-four-elem">
+									<label class="radio">
+										<input class="radio__input" type="radio" name="size" value="S" />
+										S
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="size" value="M" checked required />
+										M
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="size" value="L" />
+										L
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="size" value="XL" />
+										XL
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Этаж</legend>
+
+								<div class="form__wrapper-four-elem">
+									<label class="radio">
+										<input class="radio__input" type="radio" name="floor" value="1" />
+										1
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="floor" value="2" />
+										2
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="floor" value="3" />
+										3
+									</label>
+
+									<label class="radio">
+										<input class="radio__input" type="radio" name="floor" value="4" />
+										4
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Преимущества</legend>
+
+								<div class="form__wrapper-two-elem">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="fireplace" checked />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Камин</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="two-storied" disabled />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Двухэтажная</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="pool" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Бассейн</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="three-storeyed" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Трехэтажная</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="terrace" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Терраса</span>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Балконы</legend>
+
+								<div class="form__wrapper-two-elem">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="balconies" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Балконы</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="loggia" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Лоджия</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="no-balcony" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Нет балкона</span>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Планировка</legend>
+
+								<div class="form__wrapper-two-elem">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="linear" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Линейная</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="swing" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Распашная</span>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="form__fieldset">
+								<legend class="form__legend">Ориентация по сторонам света</legend>
+
+								<div class="form__wrapper-two-elem">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="northeast" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Северо-восток</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="east" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Восток</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="southeast" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Юго-восток</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="south" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Юг</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="southwest" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Юго-запад</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="west" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Запад</span>
+									</label>
+
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" name="northwest" />
+										<span class="checkbox__checkmark"></span>
+										<span class="checkbox__text">Северо-запад</span>
+									</label>
+								</div>
+							</fieldset>
+
+							<button class="form__button" type="submit">Применить фильтр</button>
+						</form>
+
 						<!-- Список с карточками -->
 						<ul class="catalog-list">
 							<li class="catalog-list__item">
@@ -61,7 +346,7 @@
 									<a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
 										<div class="catalog-card__top">
 											<p class="catalog-card__title">Квартира №18</p>
-											<img class="catalog-card__pic" src="images/plan-18.jpg" width="220" height="205" alt="Планировка квартиры №18" />
+											<img class="catalog-card__pic" src="images/plan-18.png" width="220" height="205" alt="Планировка квартиры №18" />
 											<ul class="catalog-card__parameters">
 												<li class="catalog-card__parameters-item">
 													<div class="parameter-card parameter-card--green">
@@ -107,7 +392,7 @@
 									<a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
 										<div class="catalog-card__top">
 											<p class="catalog-card__title">Квартира №19</p>
-											<img class="catalog-card__pic" src="images/plan-19.jpg" width="220" height="205" alt="Планировка квартиры №19" />
+											<img class="catalog-card__pic" src="images/plan-19.png" width="220" height="205" alt="Планировка квартиры №19" />
 											<ul class="catalog-card__parameters">
 												<li class="catalog-card__parameters-item">
 													<div class="parameter-card parameter-card--yellow">
@@ -153,7 +438,7 @@
 									<a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
 										<div class="catalog-card__top">
 											<p class="catalog-card__title">Квартира №24</p>
-											<img class="catalog-card__pic" src="images/plan-24.jpg" width="220" height="205" alt="Планировка квартиры №24" />
+											<img class="catalog-card__pic" src="images/plan-24.png" width="220" height="205" alt="Планировка квартиры №24" />
 											<ul class="catalog-card__parameters">
 												<li class="catalog-card__parameters-item">
 													<div class="parameter-card parameter-card--blue">
@@ -199,7 +484,7 @@
 									<a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
 										<div class="catalog-card__top">
 											<p class="catalog-card__title">Квартира №23</p>
-											<img class="catalog-card__pic" src="images/plan-23.jpg" width="220" height="205" alt="Планировка квартиры №23" />
+											<img class="catalog-card__pic" src="images/plan-23.png" width="220" height="205" alt="Планировка квартиры №23" />
 											<ul class="catalog-card__parameters">
 												<li class="catalog-card__parameters-item">
 													<div class="parameter-card parameter-card--violet">
@@ -245,7 +530,7 @@
 									<a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
 										<div class="catalog-card__top">
 											<p class="catalog-card__title">Квартира №31</p>
-											<img class="catalog-card__pic" src="images/plan-31.jpg" width="220" height="205" alt="Планировка квартиры №31" />
+											<img class="catalog-card__pic" src="images/plan-31.png" width="220" height="205" alt="Планировка квартиры №31" />
 											<ul class="catalog-card__parameters">
 												<li class="catalog-card__parameters-item">
 													<div class="parameter-card parameter-card--blue">
@@ -291,7 +576,7 @@
 									<a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
 										<div class="catalog-card__top">
 											<p class="catalog-card__title">Квартира №5</p>
-											<img class="catalog-card__pic" src="images/plan-5.jpg" width="220" height="205" alt="Планировка квартиры №5" />
+											<img class="catalog-card__pic" src="images/plan-5.png" width="220" height="205" alt="Планировка квартиры №5" />
 											<ul class="catalog-card__parameters">
 												<li class="catalog-card__parameters-item">
 													<div class="parameter-card parameter-card--blue">
