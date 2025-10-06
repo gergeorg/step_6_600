@@ -9,7 +9,11 @@
 	justify-content: space-between;
 }
 
-.header__butger-icon {
+.header__burger{
+  padding: 0;
+}
+
+.header__burger-icon {
   fill: #090909;
 }
 
@@ -24,12 +28,13 @@
 }
 
 .header__view-button  {
-	padding: 29px 30px;
+	padding: 29px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 4px;
 	border-radius: 0 0 0 20px;
-	max-width: 210px;
+	width: 210px;
 	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 	background: #fff;
 	font-weight: 400;
@@ -46,7 +51,7 @@
 	pointer-events: none;
 }
 
-.header__view-button--rigrt {
+.header__view-button--right {
 	border-radius: 0 0 20px 0;
 }
 
